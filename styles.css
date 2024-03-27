@@ -336,6 +336,77 @@ section {
     margin-bottom: 2%;
 }
 
+/* General Body and HTML */
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Improved Header for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navigation, .btn-talk {
+        margin-top: 20px;
+    }
+
+    .navigation a {
+        font-size: 0.9em; /* Smaller text on mobile */
+    }
+}
+
+/* Section Padding Adjustment for Smaller Devices */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px; /* Smaller padding on mobile */
+    }
+}
+
+/* Responsive Images */
+.middle-right-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Education Section Alignment */
+#education .content, #projects .content, #skills .content {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #education .content2, #projects .content, #skills .skills-container {
+        text-align: left;
+        max-width: 100%;
+    }
+}
+
+/* Skills Section Adjustment */
+@media (max-width: 768px) {
+    .skills-category {
+        text-align: center;
+    }
+
+    .skills-category ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+/* Contact Section */
+#contact .content {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .social-icons a {
+        margin-right: 10px; /* Closer icons on smaller screens */
+    }
+}
+
+
 
 
 
